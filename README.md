@@ -39,3 +39,11 @@ The platform combines mechanical design, embedded electronics, radio control, 3D
 <p align="center">
   <img src="images/platform_infographic.png" width="900" alt="System Overview">
 </p>
+
+## Real Prototype
+
+The platform was physically designed, 3D-printed, assembled, programmed, and tested as part of a graduation engineering project.
+
+<p align="center">
+  <img src="images/platform_real.jpg" width="850" alt="Real prototype of the robotic tracked platform">
+</p>
