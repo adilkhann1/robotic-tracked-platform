@@ -53,3 +53,44 @@ The platform was physically designed, 3D-printed, assembled, programmed, and tes
 A short demonstration of the robotic tracked platform during real-world testing.
 
 ▶️ [Watch the platform demonstration](media/platform_demo.mp4)
+
+## System Architecture
+
+The robotic platform uses a two-level control architecture.
+
+### Low-Level Control — Arduino Mega 2560
+
+The Arduino Mega 2560 is responsible for real-time motion control and interaction with the drive system.
+
+Main functions:
+
+- Receiving commands from the FlySky FS-iA6B receiver via iBus
+- Processing operator input
+- Generating PWM signals for the BTS7960 motor drivers
+- Controlling left and right DC motors
+- Differential steering
+- Speed control
+- Emergency stop functionality
+- Transmission mode control
+
+Control chain:
+
+`FlySky FS-i6 → FS-iA6B → Arduino Mega 2560 → BTS7960 → DC Motors`
+
+### High-Level Processing — Raspberry Pi 4
+
+The Raspberry Pi 4 is responsible for video processing and computer vision.
+
+Main functions:
+
+- Capturing video from the camera
+- Processing frames using OpenCV
+- HSV-based image segmentation
+- Contour detection
+- Basic obstacle detection
+- Displaying detected objects
+- Providing a foundation for future autonomous navigation
+
+Processing chain:
+
+`Camera → Raspberry Pi 4 → Python / OpenCV → Obstacle Detection`
