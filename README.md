@@ -49,7 +49,7 @@ The platform uses an **Arduino Mega 2560** for real-time motion control and a **
 The platform was physically **designed, 3D-printed, assembled, programmed, and tested** as part of the engineering project.
 
 <p align="center">
-  <img src="images/platform_real.jpg" width="850" alt="Real prototype of the robotic tracked platform">
+  <img src="images/platform_real.jpeg" width="850" alt="Real prototype of the robotic tracked platform">
 </p>
 
 ## Demo
