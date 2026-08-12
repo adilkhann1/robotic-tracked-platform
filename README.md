@@ -94,3 +94,41 @@ Main functions:
 Processing chain:
 
 `Camera → Raspberry Pi 4 → Python / OpenCV → Obstacle Detection`
+
+## Hardware
+
+The platform integrates mechanical, electronic, and computing components into a single robotic system.
+
+### Main Components
+
+- Arduino Mega 2560
+- Raspberry Pi 4 Model B
+- FlySky FS-i6 transmitter
+- FlySky FS-iA6B receiver
+- BTS7960 motor drivers
+- DC motors
+- Camera
+- Battery power system
+- Servos
+- Custom electronic control module
+- 3D-printed chassis and tracked drive components
+
+The Arduino Mega 2560 handles real-time motion control, while the Raspberry Pi 4 provides additional computing power for video processing and computer vision.
+
+## CAD & 3D Printing
+
+The mechanical structure of the platform was designed using SolidWorks.
+
+The CAD development included:
+
+- Chassis design
+- Tracked drive system
+- Suspension components
+- Mounting elements
+- Internal component layout
+- Transmission components
+- Assembly verification
+
+The platform was designed with additive manufacturing in mind. Most structural components were manufactured using FDM 3D printing.
+
+3D printing made it possible to rapidly prototype, modify, and manufacture custom mechanical components specifically for the robotic platform.
