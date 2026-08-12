@@ -217,3 +217,26 @@ Possible future development of the platform includes:
 - Communication between Raspberry Pi and Arduino
 - Automatic route planning
 - Improved power management
+
+## Author
+
+**Adilkhan Bazarkhanov**
+
+Instrumentation Engineering graduate with interests in robotics, embedded systems, computer vision, IoT, and 3D printing.
+
+This repository was created and is maintained by Adilkhan Bazarkhanov as an engineering portfolio project.
+
+## Academic Project
+
+This repository presents the engineering implementation of a graduation project completed in 2026.
+
+The repository is maintained as a technical portfolio demonstrating experience in:
+
+- Robotics
+- Embedded systems
+- Computer vision
+- 3D printing
+- CAD design
+- Electronics integration
+- Python and OpenCV
+- Arduino development
