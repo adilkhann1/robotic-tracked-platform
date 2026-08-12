@@ -132,3 +132,91 @@ The CAD development included:
 The platform was designed with additive manufacturing in mind. Most structural components were manufactured using FDM 3D printing.
 
 3D printing made it possible to rapidly prototype, modify, and manufacture custom mechanical components specifically for the robotic platform.
+
+## Software
+
+The software architecture is divided into two main components.
+
+### Arduino Firmware
+
+The Arduino Mega 2560 firmware is responsible for real-time control of the tracked drive system.
+
+Main functions include:
+
+- Reading FlySky receiver commands via iBus
+- Processing throttle and steering input
+- PWM motor speed control
+- Differential steering
+- Smooth acceleration and deceleration
+- Emergency stop / safety logic
+- Control of the tracked drive system
+
+Source code:
+
+[`src/arduino/tracked_platform_control.ino`](src/arduino/tracked_platform_control.ino)
+
+### Raspberry Pi Computer Vision
+
+The Raspberry Pi software is written in Python and uses OpenCV for image processing.
+
+Main functions include:
+
+- Camera initialization
+- Real-time video capture
+- Image preprocessing
+- HSV-based segmentation
+- Edge detection
+- Contour detection
+- Basic obstacle detection
+- Bounding-box visualization
+- FPS monitoring
+
+Source code:
+
+[`src/raspberry_pi/obstacle_detection.py`](src/raspberry_pi/obstacle_detection.py)
+
+Python dependencies:
+
+[`src/raspberry_pi/requirements.txt`](src/raspberry_pi/requirements.txt)
+
+## Repository Structure
+
+```text
+robotic-tracked-platform/
+│
+├── README.md
+│
+├── images/
+│   ├── platform_hero.png
+│   ├── platform_infographic.png
+│   └── platform_real.jpg
+│
+├── media/
+│   └── platform_demo.mp4
+│
+└── src/
+    ├── arduino/
+    │   └── tracked_platform_control.ino
+    │
+    └── raspberry_pi/
+        ├── obstacle_detection.py
+        └── requirements.txt
+
+
+И ещё сразу добавь:
+
+```markdown
+## Future Improvements
+
+Possible future development of the platform includes:
+
+- Autonomous navigation
+- Advanced obstacle avoidance
+- Machine-learning-based object detection
+- Visual object tracking
+- Integration of ultrasonic or LiDAR sensors
+- Telemetry transmission
+- Remote web-based control
+- Communication between Raspberry Pi and Arduino
+- Automatic route planning
+- Improved power management
