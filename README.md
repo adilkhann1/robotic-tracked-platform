@@ -1,5 +1,13 @@
 # Robotic Tracked Platform
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Arduino-Mega%202560-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino">
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-4-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi">
+  <img src="https://img.shields.io/badge/Python-OpenCV-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Computer-Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/3D-Printing-orange?style=for-the-badge" alt="3D Printing">
+</p>
+
 A modular robotic tracked platform combining **3D-printed mechanical components, Arduino-based motion control, Raspberry Pi computer vision, and FlySky remote control**.
 
 <p align="center">
@@ -176,6 +184,84 @@ The platform was designed with additive manufacturing in mind. Most structural c
 
 The software architecture is divided into two main components: **Arduino firmware** and **Raspberry Pi computer vision software**.
 
+---
+
+## How to Run
+
+### Raspberry Pi / Computer Vision
+
+Clone the repository:
+
+```bash
+git clone https://github.com/adilkhann1/robotic-tracked-platform.git
+```
+
+Open the project directory:
+
+```bash
+cd robotic-tracked-platform
+```
+
+Install the required Python dependencies:
+
+```bash
+python3 -m pip install -r src/raspberry_pi/requirements.txt
+```
+
+Connect the camera to the Raspberry Pi and run the computer vision module:
+
+```bash
+python3 src/raspberry_pi/obstacle_detection.py
+```
+
+### Optional Computer Vision Modes
+
+Run the default edge-based detection:
+
+```bash
+python3 src/raspberry_pi/obstacle_detection.py
+```
+
+Run HSV-based detection:
+
+```bash
+python3 src/raspberry_pi/obstacle_detection.py --mode hsv
+```
+
+Run HSV-based detection and display the processing mask:
+
+```bash
+python3 src/raspberry_pi/obstacle_detection.py --mode hsv --show-mask
+```
+
+### Controls
+
+| Key | Action |
+|---|---|
+| `Q` | Exit the program |
+| `Esc` | Exit the program |
+| `S` | Save the current camera frame |
+
+### Arduino
+
+1. Open the firmware file:
+
+   `src/arduino/tracked_platform_control.ino`
+
+2. Open the file in **Arduino IDE**.
+
+3. Select **Arduino Mega or Mega 2560** as the target board.
+
+4. Connect the Arduino Mega 2560 to the computer via USB.
+
+5. Install the **IBusBM** library if it is not already installed.
+
+6. Select the correct serial / COM port.
+
+7. Upload the firmware to the Arduino Mega 2560.
+
+The Arduino receives commands from the FlySky FS-iA6B receiver via iBus and generates PWM control signals for the BTS7960 motor drivers.
+
 ### Arduino Firmware
 
 The Arduino Mega 2560 firmware is responsible for real-time control of the tracked drive system.
@@ -306,3 +392,4 @@ The repository is maintained as a technical portfolio demonstrating practical ex
 * Python and OpenCV
 * Arduino development
 * Raspberry Pi development
+
