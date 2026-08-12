@@ -47,3 +47,9 @@ The platform was physically designed, 3D-printed, assembled, programmed, and tes
 <p align="center">
   <img src="images/platform_real.jpeg" width="850" alt="Real prototype of the robotic tracked platform">
 </p>
+
+## Demo
+
+A short demonstration of the robotic tracked platform during real-world testing.
+
+▶️ [Watch the platform demonstration](media/platform_demo.mp4)
