@@ -45,5 +45,5 @@ The platform combines mechanical design, embedded electronics, radio control, 3D
 The platform was physically designed, 3D-printed, assembled, programmed, and tested as part of a graduation engineering project.
 
 <p align="center">
-  <img src="images/platform_real.jpg" width="850" alt="Real prototype of the robotic tracked platform">
+  <img src="images/platform_real.jpeg" width="850" alt="Real prototype of the robotic tracked platform">
 </p>
