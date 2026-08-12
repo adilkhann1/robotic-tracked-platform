@@ -179,3 +179,41 @@ Python dependencies:
 
 [`src/raspberry_pi/requirements.txt`](src/raspberry_pi/requirements.txt)
 
+## Repository Structure
+
+```text
+robotic-tracked-platform/
+│
+├── README.md
+│
+├── images/
+│   ├── platform_hero.png
+│   ├── platform_infographic.png
+│   └── platform_real.jpg
+│
+├── media/
+│   └── platform_demo.mp4
+│
+└── src/
+    ├── arduino/
+    │   └── tracked_platform_control.ino
+    │
+    └── raspberry_pi/
+        ├── obstacle_detection.py
+        └── requirements.txt
+```
+
+## Future Improvements
+
+Possible future development of the platform includes:
+
+- Autonomous navigation
+- Advanced obstacle avoidance
+- Machine-learning-based object detection
+- Visual object tracking
+- Integration of ultrasonic or LiDAR sensors
+- Telemetry transmission
+- Remote web-based control
+- Communication between Raspberry Pi and Arduino
+- Automatic route planning
+- Improved power management
